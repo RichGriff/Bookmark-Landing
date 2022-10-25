@@ -16,6 +16,10 @@ body {
   @apply bg-bm-purple text-white
 }
 
+.btn-red {
+  @apply bg-bm-red text-white
+}
+
 .btn-white {
   @apply bg-bm-white
 }

@@ -63,3 +63,10 @@ export const extensionData = {
         },
     ]
 }
+
+export const ctaData = {
+    heading: 'Stay up-to-date with what we\'re doing',
+    subHeading: '35,000 Already Joined',
+    btnText: 'Contact Us',
+    placeholderText: 'Enter your email address'
+}
