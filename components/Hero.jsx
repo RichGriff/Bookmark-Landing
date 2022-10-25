@@ -5,7 +5,7 @@ const Hero = () => {
     const { ctaText, ctaText2, img, content } = heroData
     return (
         <section className="relative">
-        <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+        <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-24">
             <div className="flex flex-1 flex-col items-center lg:items-start">
             <h2 className="font-medium text-bm-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
                 {content.heading}
@@ -26,7 +26,8 @@ const Hero = () => {
                 <img className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src={img} alt="" />
             </div>
         </div>
-        <div className="hidden md:block overflow-hidden bg-bm-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg: -bottom-28 lg:-right-36"></div>
+        <div className="hidden md:block overflow-hidden bg-bm-purple rounded-l-full absolute h-80 w-2/5 top-32 right-0 lg: -bottom-28 lg:-right-26"></div>
+        {/* <div className="hidden md:block overflow-x-hidden bg-bm-purple rounded-l-full absolute h-80 w-2/4 top-32 -right-28"></div> */}
         </section>
     )
 }
