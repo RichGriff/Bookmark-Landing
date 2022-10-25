@@ -41,6 +41,9 @@ const Faq = () => {
             </li>
           ))}
       </ul>
+      <div className='flex justify-center items-center py-8'>
+        <button className='btn btn-purple'>{btnText}</button>
+      </div>
     </section>
   )
 }
