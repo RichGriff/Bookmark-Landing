@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Feature = ({ feature }) => {
-    console.log(feature)
     return (
         <div className="relative mt-20 lg:mt-24">
             <div className='container flex flex-col lg:flex-row items-center justify-center gap-x-24'>
