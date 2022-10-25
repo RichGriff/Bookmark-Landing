@@ -23,3 +23,8 @@ body {
 .btn-white {
   @apply bg-bm-white
 }
+
+.fixed_body{
+  overflow: hidden;
+  block-size: 100%;
+}

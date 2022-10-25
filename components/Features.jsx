@@ -31,7 +31,7 @@ const Features = () => {
                     <li 
                         key={i} 
                         onClick={() => selectFeature(i)}
-                        className={`p-6 w-96 text-center border-b-2 text-bm-grey cursor-pointer ${i === selectedFeatureIndex && 'text-black border-bm-red border-b-4 active dark:text-blue-500 dark:border-blue-500'}`}>
+                        className={`p-6 w-96 text-center border-b-2 hover:text-bm-red text-bm-grey cursor-pointer ${i === selectedFeatureIndex && 'text-black border-bm-red border-b-4 active dark:text-blue-500 dark:border-blue-500 '}`}>
                         {f.tabTitle}
                     </li>
                 ))}
