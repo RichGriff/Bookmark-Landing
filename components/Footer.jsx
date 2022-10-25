@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container items-center sm:flex sm:justify-between sm:items-center">
 
         <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-center text-center gap-8'>
-          <img className='sm:mr-6' src='/images/logo-bookmark-white.svg' alt="bookmark logo" />
+          <img className='sm:mr-6' src='/images/logo-bookmark-footer.svg' alt="bookmark logo" />
           <ul className='flex flex-col sm:flex-row justify-start items-center uppercase sm:gap-8'>
             <li className='mb-8 cursor-pointer sm:m-2'>Features</li>
             <li className='mb-8 cursor-pointer sm:m-2'>Pricing</li>

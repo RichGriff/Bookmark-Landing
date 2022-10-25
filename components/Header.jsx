@@ -7,11 +7,8 @@ const Header = () => {
 
     const handleClick = () => {
         const body = document.getElementById("body")
-        console.log(body)
-
-        // setShowAside(!showAside)
-
-        // body.classList.toggle("fixed_body")
+        setShowAside(!showAside)
+        body.classList.toggle("fixed_body")
     }
 
     return (
@@ -36,12 +33,28 @@ const Header = () => {
                 </div>
             </nav>
         </header>
-        {showAside && (<div className='absolute top-0 left-0 w-full h-full bg-bm-blue z-50'>
-            Menu
-            <button onClick={handleClick}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill="#FFF" fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"/></svg>
-            </button>
-        </div>)}
+        {showAside && (
+        <div className='absolute top-0 left-0 w-screen h-screen bg-bm-blue z-50'>
+            <div className='flex flex-row justify-between items-center py-8 w-96 mx-auto'>
+                <img src='/images/logo-bookmark-white.svg' alt="bookmark logo" />
+                <button onClick={handleClick}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill="#FFF" fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"/></svg>
+                </button>
+            </div>
+            <div className='flex flex-1 flex-col justify-between items-center'>
+                <ul className={`flex flex-col justify-center items-center text-center w-96 mx-auto text-lg font-thin`}>
+                    {links.map((link, index) => (
+                        <li key={index} className={`cursor-pointer uppercase text-white border-t-2 border-gray-700 w-full py-4 ${index === links.length-1 && 'border-b-2'} `}>{link}</li>
+                    ))}
+                    <button type="button" className='w-full btn border-2 border-white text-white font-medium uppercase mt-8 hover:bg-white hover:text-bm-blue transition-all duration-300 ease-in-out'>{ctaText}</button>
+                </ul>
+                <div className='socials flex p-16 flex-row justify-center items-center gap-8'>
+                    <img src='/images/icon-facebook.svg' alt='facebook' />
+                    <img src='/images/icon-twitter.svg' alt='twitter' />
+                </div>
+            </div>
+        </div>
+        )}
         </>
     )
 }
